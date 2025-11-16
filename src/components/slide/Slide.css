@@ -1,7 +1,6 @@
 .slide-wrapper {
     width: 100%;
     height: 100%;
-    padding: 0 2rem;
     position: relative;
     perspective: 2000px;
 }
@@ -28,8 +27,6 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 0;
-    left: 0;
     backface-visibility: hidden;
 
     background: var(--secondary);
@@ -41,7 +38,6 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 
     color: var(--background);
@@ -49,6 +45,7 @@
 }
 
 .flip-front h2 {
+    font-size: 5vh;
     text-align: center;
     color: var(--background);
     font-family: var(--heading);
@@ -89,19 +86,78 @@
     cursor: pointer;
 }
 
+.flip-back>* {
+    margin: 1vh 2.5vh 0;
+}
+
+.flip-back h2 {
+    font-size: 5vh;
+}
+
 .flip-back button {
-    margin-top: 2rem;
-    padding: 1rem 2rem;
-    border: 3px solid var(--background);
-    background: transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 7.5vh;
+
+    margin: 2.5vh 2.5vh 0;
+    background-color: transparent;
     color: var(--background);
-    font-size: 2.5vh;
+    border: 0.5vh solid var(--background);
+
+    font-size: 4vh;
     font-family: var(--heading);
-    border-radius: 10px;
-    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.5s;
 }
 
 .flip-back button:hover {
-    background: var(--background);
+    background-color: var(--background);
+    color: var(--secondary);
+    cursor: pointer;
+}
+
+.flip-back p {
+    font-family: var(--body);
+    font-size: 2vh;
+    white-space: pre-line;
+}
+
+.frameworks-used {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh 1vw;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 1vh;
+}
+
+.frameworks-used li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 4vh;
+
+    margin: 0.5vh;
+    padding: 1vh;
+    background-color: transparent;
+    color: var(--background);
+    border: 0.5vh solid var(--background);
+
+    font-size: 2vh;
+    font-family: var(--heading);
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.frameworks-used li:hover {
+    background-color: var(--background);
     color: var(--secondary);
 }
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {}

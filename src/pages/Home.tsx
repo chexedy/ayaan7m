@@ -1,11 +1,8 @@
 import "./Home.css";
-import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import { motion } from "motion/react";
 
 export default function Home() {
-    const [clicked, setClicked] = useState(false);
-
     return (
         <div className="home">
             <motion.h1
@@ -35,12 +32,11 @@ export default function Home() {
 
             <motion.a
                 href="#about"
-                onClick={() => setClicked(true)}
                 initial={{ x: -80, opacity: 0 }}
-                animate={clicked ? { x: "80vw", opacity: 0 } : { x: 0, opacity: 1 }}
+                animate={{ x: 0, opacity: 1 }}
                 transition={{ duration: 1, ease: "easeInOut" }}
-                whileHover={!clicked ? { scale: 1.08, x: 5 } : {}}
-                whileTap={!clicked ? { scale: 0.95 } : {}}
+                whileHover={{ scale: 1.08, x: 5 }}
+                whileTap={{ scale: 0.95 }}
             >
                 Enter my site &nbsp; <FaArrowRight />
             </motion.a>
