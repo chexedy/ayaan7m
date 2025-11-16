@@ -1,1 +1,1 @@
-export { ThemeContext } from "./ThemeContext.js";
+export { ThemeContext } from "./ThemeContext.tsx";

@@ -1,0 +1,50 @@
+.home {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.home a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 7.5vh;
+
+    margin-top: 7.5vh;
+    background-color: transparent;
+    color: var(--secondary);
+    border-width: 0.5vh;
+    border-style: solid;
+    border-color: var(--secondary);
+
+    font-size: 4vh;
+    font-family: var(--heading);
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.home a:hover {
+    background-color: var(--secondary);
+    color: var(--background);
+}
+
+@media screen and (max-width: 767px) {
+    .home a {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .home a {
+        width: 80%;
+    }
+}
