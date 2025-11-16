@@ -1,4 +1,4 @@
-import React, { useCallback, Children, cloneElement } from 'react'
+import React, { useCallback, Children } from 'react'
 import type { EmblaOptionsType, EmblaCarouselType } from 'embla-carousel'
 import {
     PrevButton,

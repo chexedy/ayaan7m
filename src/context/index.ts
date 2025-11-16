@@ -1,1 +1,1 @@
-export { ThemeContext } from "./ThemeContext.tsx";
+export { ThemeProvider } from "./ThemeContext";

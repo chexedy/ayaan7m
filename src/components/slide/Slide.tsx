@@ -29,7 +29,7 @@ const Slide: React.FC<SlideProps> = ({ title, src, alt, description, link, frame
                             </a>
 
                             <button
-                                onClick={(e: React.MouseEvent<HTMLButtonElement>) => setFlipped(true)}
+                                onClick={() => setFlipped(true)}
                             >
                                 Learn more
                             </button>
@@ -47,7 +47,7 @@ const Slide: React.FC<SlideProps> = ({ title, src, alt, description, link, frame
                         </ul>
 
                         <button
-                            onClick={(e: React.MouseEvent<HTMLButtonElement>) => setFlipped(false)}
+                            onClick={() => setFlipped(false)}
                         >
                             Go back
                         </button>
